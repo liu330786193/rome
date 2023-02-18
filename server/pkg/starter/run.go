@@ -7,6 +7,7 @@ import (
 )
 
 func RunWebServer() {
+	connHive()
 	// 初始化config.yml配置文件映射信息
 	config.Init()
 	// 初始化日志配置信息
@@ -22,4 +23,5 @@ func RunWebServer() {
 	initRedis()
 	// 运行web服务
 	runWebServer()
+
 }
